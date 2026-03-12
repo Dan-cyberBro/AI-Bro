@@ -98,4 +98,54 @@
   .glow-line {
     box-shadow: 0 0 12px hsl(174 72% 50% / 0.3);
   }
+
+  .hero-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.35;
+    pointer-events: none;
+  }
+
+  .hero-glow-1 {
+    width: 500px;
+    height: 500px;
+    background: hsl(174, 72%, 50%);
+    top: -10%;
+    left: -5%;
+    animation: glow-float-1 8s ease-in-out infinite;
+  }
+
+  .hero-glow-2 {
+    width: 400px;
+    height: 400px;
+    background: hsl(190, 70%, 45%);
+    bottom: -5%;
+    right: -5%;
+    animation: glow-float-2 10s ease-in-out infinite;
+  }
+
+  .hero-glow-3 {
+    width: 300px;
+    height: 300px;
+    background: hsl(210, 60%, 40%);
+    top: 40%;
+    left: 50%;
+    animation: glow-float-3 12s ease-in-out infinite;
+  }
+}
+
+@keyframes glow-float-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(40px, 30px) scale(1.15); }
+}
+
+@keyframes glow-float-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-30px, -40px) scale(1.1); }
+}
+
+@keyframes glow-float-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.2; }
+  50% { transform: translate(-20px, 20px) scale(1.2); opacity: 0.35; }
 }
