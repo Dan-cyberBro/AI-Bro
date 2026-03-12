@@ -4,7 +4,12 @@ import heroImg from "@/assets/hero-illustration.png";
 
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
-    <div className="container mx-auto px-4 md:px-8 py-16 md:py-24">
+    {/* Animated glow blobs */}
+    <div className="hero-glow hero-glow-1" />
+    <div className="hero-glow hero-glow-2" />
+    <div className="hero-glow hero-glow-3" />
+
+    <div className="container mx-auto px-4 md:px-8 py-16 md:py-24 relative z-10">
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

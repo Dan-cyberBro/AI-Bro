@@ -1,11 +1,12 @@
 import AnimatedSection from "./AnimatedSection";
-import { MessageCircle, ClipboardList, Lightbulb, Rocket } from "lucide-react";
+import { MessageCircle, ClipboardList, Lightbulb, Rocket, BadgeDollarSign } from "lucide-react";
 
 const steps = [
   { icon: <MessageCircle size={28} />, title: "Зайди в бот", text: "Перейди по ссылке и начни диалог." },
   { icon: <ClipboardList size={28} />, title: "Ответь на пару вопросов", text: "Расскажи о своих интересах и готовности участвовать." },
   { icon: <Lightbulb size={28} />, title: "Предложи идею или выбери проект", text: "Можно создать инициативу или присоединиться к существующей." },
   { icon: <Rocket size={28} />, title: "Получай поддержку", text: "Голосование, отбор, менторы и ресурсы." },
+  { icon: <BadgeDollarSign size={28} />, title: "Запусти свой продукт", text: "Получай финансовую компенсацию." },
 ];
 
 const HowItWorksSection = () => (
@@ -20,9 +21,9 @@ const HowItWorksSection = () => (
         </p>
       </AnimatedSection>
 
-      <div className="relative grid md:grid-cols-4 gap-8">
+      <div className="relative grid md:grid-cols-5 gap-8">
         {/* Connecting line */}
-        <div className="hidden md:block absolute top-10 left-[12.5%] right-[12.5%] h-px bg-primary/30 glow-line" />
+        <div className="hidden md:block absolute top-10 left-[10%] right-[10%] h-px bg-primary/30 glow-line" />
 
         {steps.map((step, i) => (
           <AnimatedSection key={step.title} delay={i * 0.15}>
