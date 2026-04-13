@@ -7,6 +7,7 @@ const navItems = [
   { label: "Как работает", href: "#how" },
   { label: "Темы", href: "#topics" },
   { label: "Присоединиться", href: "#cta" },
+  { label: "FAQ", href: "/faq" },
 ];
 
 const Navbar = () => {
