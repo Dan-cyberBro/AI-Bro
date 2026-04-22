@@ -18,7 +18,7 @@ const HeroSection = () => (
         >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-foreground mb-6">
             AI-революция{" "}
-            <span className="gradient-text">начинается<br />с&nbsp;тебя</span>
+            <span className="gradient-text">начинается<br />с&nbsp;нас</span>
           </h1>
           <p className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
             Мы запускаем внутреннее AI-движение. Предлагай идеи, участвуй в
